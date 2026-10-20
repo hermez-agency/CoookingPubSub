@@ -2,6 +2,8 @@
 
 A lightweight and type-safe publish/subscribe library for JavaScript and TypeScript.
 
+[Homepage](https://hermez.dev/CoookingPubSub/) · [npm](https://www.npmjs.com/package/coooking-pubsub)
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -301,3 +303,11 @@ function MessagePublisher() {
 
 export { messageBus, MessageListener, MessagePublisher }
 ```
+
+## Author
+
+A Hermez product — [hermez.dev](https://hermez.dev).
+
+## License
+
+MIT
