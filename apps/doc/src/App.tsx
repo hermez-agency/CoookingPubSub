@@ -10,10 +10,10 @@ export function App(): JSX.Element {
         <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
           <div className="font-semibold">TinyPubSub</div>
           <div className="flex items-center gap-2">
-            <a href="https://github.com/SalvadorCardona/TinyPubSub" target="_blank" rel="noreferrer">
+            <a href="https://github.com/hermez-agency/CoookingPubSub" target="_blank" rel="noreferrer">
               <Button variant="ghost">GitHub</Button>
             </a>
-            <a href="https://www.npmjs.com/package/tiny-pub-sub" target="_blank" rel="noreferrer">
+            <a href="https://www.npmjs.com/package/coooking-pubsub" target="_blank" rel="noreferrer">
               <Button variant="ghost">npm</Button>
             </a>
           </div>
@@ -60,6 +60,12 @@ export function App(): JSX.Element {
           <span>©</span>
           <span>{new Date().getFullYear()}</span>
           <span>TinyPubSub.</span>
+          <span>
+            Un produit
+            {' '}
+            <a href="https://hermez.dev" className="underline">Hermez</a>
+            .
+          </span>
         </div>
       </footer>
     </div>
