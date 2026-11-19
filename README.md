@@ -41,7 +41,7 @@ The `createPubSub` allows you to create a simple publish/subscribe system.
 
 #### Import
 ```typescript
-import { createPubSub } from 'simple-pubsub'
+import { createPubSub } from 'coooking-pubsub'
 ```
 #### Creating an instance
 ```typescript
@@ -76,7 +76,7 @@ pubsub.unsubscribe(subscription.id)
 ```
 #### Complete example
 ```typescript
-import { createPubSub } from 'simple-pubsub'
+import { createPubSub } from 'coooking-pubsub'
 
 interface Message {
   text: string
@@ -113,7 +113,7 @@ The `createChannelPubSub` allows you to manage multiple communication channels.
 #### Import
 
 ```typescript
-import { createChannelPubSub } from 'simple-pubsub'
+import { createChannelPubSub } from 'coooking-pubsub'
 ```
 
 #### Creating an instance
@@ -173,7 +173,7 @@ channelBus.unsubscribe('notifications', subscription.id)
 #### Complete example
 
 ```typescript
-import { createChannelPubSub } from 'simple-pubsub'
+import { createChannelPubSub } from 'coooking-pubsub'
 
 const eventBus = createChannelPubSub()
 
@@ -210,9 +210,9 @@ allSub.unsubscribe()
 #### Custom hook (recommended)
 
 ```tsx
-import type { Index } from 'simple-pubsub'
+import type { Index } from 'coooking-pubsub'
 import { useEffect } from 'react'
-import { createPubSub } from 'simple-pubsub'
+import { createPubSub } from 'coooking-pubsub'
 
 // Create the instance outside the component
 const messageBus = createPubSub<string>()
@@ -248,7 +248,7 @@ function MessageSender() {
 
 ```tsx
 import { useEffect, useState } from 'react'
-import { createPubSub } from 'simple-pubsub'
+import { createPubSub } from 'coooking-pubsub'
 
 interface Message {
   text: string
