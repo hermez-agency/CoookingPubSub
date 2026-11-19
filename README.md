@@ -211,8 +211,8 @@ allSub.unsubscribe()
 
 ```tsx
 import type { Index } from 'coooking-pubsub'
-import { useEffect } from 'react'
 import { createPubSub } from 'coooking-pubsub'
+import { useEffect } from 'react'
 
 // Create the instance outside the component
 const messageBus = createPubSub<string>()
@@ -247,8 +247,8 @@ function MessageSender() {
 #### Direct usage with useEffect
 
 ```tsx
-import { useEffect, useState } from 'react'
 import { createPubSub } from 'coooking-pubsub'
+import { useEffect, useState } from 'react'
 
 interface Message {
   text: string
